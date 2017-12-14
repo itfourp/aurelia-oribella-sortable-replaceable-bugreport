@@ -1,0 +1,17 @@
+<template>
+<require from="src/elements/sort-container"></require>
+	<sort-container sort-container-items.bind="appItems">
+		<template replace-part="item-replaceable">
+			<span>${sortContainerItem.description}</span>
+		</template>
+	</sort-container>
+	<hr>
+	<sort-container sort-container-items.bind="otherAppItems">
+		<template replace-part="item-replaceable">
+			<textarea value.bind="sortContainerItem.description"></textarea>
+		</template>
+	</sort-container>
+	<button click.delegate="addElement()">Add sort element</button>
+	<button click.delegate="addOtherElement()">Add other sort element</button>
+	<button click.delegate="swapElements()">Swap elements</button>
+</template>

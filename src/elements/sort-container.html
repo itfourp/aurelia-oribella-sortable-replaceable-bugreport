@@ -1,0 +1,10 @@
+<template>
+<div oa-sortable="items.bind: sortContainerItems">
+	<div repeat.for="sortContainerItem of sortContainerItems" oa-sortable-item="item.bind: sortContainerItem">
+		<input value.bind="sortContainerItem.name"/>
+		<template replaceable part="item-replaceable">
+				
+		</template>
+	</div>
+</div>
+</template>

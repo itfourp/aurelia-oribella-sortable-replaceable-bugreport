@@ -11,7 +11,7 @@
       "underscore": "npm:underscore@^1.8.3"
     },
     "devDependencies": {
-      "typescript": "npm:typescript@^2.0.7"
+      "typescript": "npm:typescript@2.8.4"
     }
   },
   "dependencies": {

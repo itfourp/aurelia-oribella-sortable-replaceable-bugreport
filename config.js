@@ -358,11 +358,6 @@ System.config({
     "npm:font-awesome@4.7.0": {
       "css": "github:systemjs/plugin-css@0.1.36"
     },
-    "npm:hash-base@2.0.2": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
-      "inherits": "npm:inherits@2.0.3",
-      "stream": "github:jspm/nodelibs-stream@0.1.0"
-    },
     "npm:hash-base@3.0.4": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "inherits": "npm:inherits@2.0.3",
@@ -378,9 +373,6 @@ System.config({
       "minimalistic-assert": "npm:minimalistic-assert@1.0.0",
       "minimalistic-crypto-utils": "npm:minimalistic-crypto-utils@1.0.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
-    },
-    "npm:inherits@2.0.1": {
-      "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:inherits@2.0.3": {
       "util": "github:jspm/nodelibs-util@0.1.0"

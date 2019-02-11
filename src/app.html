@@ -1,17 +1,53 @@
 <template>
 <require from="src/elements/sort-container"></require>
-	<sort-container sort-container-items.bind="appItems">
-		<template replace-part="item-replaceable">
-			<span>${sortContainerItem.description}</span>
-		</template>
-	</sort-container>
-	<hr>
-	<sort-container sort-container-items.bind="otherAppItems">
-		<template replace-part="item-replaceable">
-			<textarea value.bind="sortContainerItem.description"></textarea>
-		</template>
-	</sort-container>
-	<button click.delegate="addElement()">Add sort element</button>
-	<button click.delegate="addOtherElement()">Add other sort element</button>
-	<button click.delegate="swapElements()">Swap elements</button>
+<require from="src/elements/sort-container-nocache"></require>
+	<table style="width: 90%; margin-left: 5%; margin-top: 5em">
+		<thead>
+			<td style="text-align: center">
+				<h4>Enabled view-cache</h4>
+			</td>
+			<td style="text-align: center">
+				<h4>Disabled view-cache</h4>
+			</td>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="padding: 15px">
+					<div>
+						<sort-container sort-container-items.bind="appItems">
+							<template replace-part="item-replaceable">
+								<span>${sortContainerItem.description}</span>
+							</template>
+						</sort-container>
+						<hr>
+						<sort-container sort-container-items.bind="otherAppItems">
+							<template replace-part="item-replaceable">
+								<textarea value.bind="sortContainerItem.description"></textarea>
+							</template>
+						</sort-container>
+					</div>
+				</td>
+				<td style="padding: 15px">
+					<div>
+						<sort-container-nocache sort-container-items.bind="appItems">
+							<template replace-part="item-replaceable">
+								<span>${sortContainerItem.description}</span>
+							</template>
+						</sort-container-nocache>
+						<hr>
+						<sort-container-nocache sort-container-items.bind="otherAppItems">
+							<template replace-part="item-replaceable">
+								<textarea value.bind="sortContainerItem.description"></textarea>
+							</template>
+						</sort-container-nocache>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div style="margin-top: 32px; text-align: center">
+		<button click.delegate="addElement()">Add sort element</button>
+		<button click.delegate="addOtherElement()">Add other sort element</button>
+		<button click.delegate="swapElements()">Swap elements</button>
+	</div>
 </template>

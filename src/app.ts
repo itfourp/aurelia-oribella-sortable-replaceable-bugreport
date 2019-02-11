@@ -31,4 +31,12 @@ export class App {
 		this.otherAppItems.splice(0, this.otherAppItems.length);
 		this.otherAppItems.push(...temp);
 	}
+	
+	attached() {
+		this.addElement();
+		this.addElement();
+		this.addElement();
+		this.addOtherElement();
+		this.addOtherElement();
+	}
 }

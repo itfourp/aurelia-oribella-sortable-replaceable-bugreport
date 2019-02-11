@@ -2,8 +2,7 @@
 <div oa-sortable="items.bind: sortContainerItems">
 	<div repeat.for="sortContainerItem of sortContainerItems"
 		oa-sortable-item="item.bind: sortContainerItem"
-		style="cursor: grab; padding: 8px; border: 1px solid black; margin: 4px; background-color: hsla(0, 0%, 97%, 0.66)"
-		view-cache="0">
+		style="cursor: grab; padding: 8px; border: 1px solid black; margin: 4px; background-color: hsla(0, 0%, 97%, 0.66)">
 		<input value.bind="sortContainerItem.name"/>
 		<template replaceable part="item-replaceable">
 				
